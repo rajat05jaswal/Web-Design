@@ -1,0 +1,7 @@
+*.log
+**/npm-cache
+/node_modules
+/tmp
+dist/docs/
+/dist
+package-lock.json

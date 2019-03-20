@@ -1,0 +1,142 @@
+body{
+	margin: 0;
+}
+main{
+	overflow: auto;
+	height: 500px;
+}
+/*This image is the main wrapper of original image*/
+.imageContainer{
+	background-image: url("../image/img_lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 660px;
+	float: left;
+	position: relative;
+}
+/*This image is the cropped wrapper of original image*/
+.croppedImage{
+	width: 50%;
+	float: left;
+	display: none;
+}
+/*This this is the grid which displays gridlines*/
+.grid{
+	display: none;
+	position: absolute;
+    border: 1px solid #C0C0C0;
+    height: 300px;
+    width: 300px;
+    left: 30px;
+    top: 30px;
+    z-index: 4;
+}
+.draggable{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../image/l-shape.png);
+    background-size: cover;
+    z-index: 9999;
+}
+/*Top left, right, bottom, left corners*/
+#top-left{
+    top: -13px;
+    left: -9px;
+    cursor: nwse-resize;
+    transform: rotate(90deg);
+}
+#top-right{
+    top: -9px;
+    right: -11px;
+    cursor: nesw-resize;
+    transform: rotate(180deg);
+}
+#bottom-right{
+	bottom: -12px;
+    right: -10px;
+    transform: rotate(-90deg);
+    cursor: nwse-resize;
+}
+#bottom-left{
+    bottom: -10px;
+    left: -13px;
+	cursor: nesw-resize;
+}
+.croppedImage img{
+	position: absolute;
+	clip: rect(0px,60px,200px,0px);
+	height: 500px;
+	width: 660px;
+}
+/*Main gridlines*/
+.gridline{
+	border: 1px solid #C0C0C0;
+	position: absolute;
+}
+.gridline.one{
+	height: 100%;
+	width: 0px;
+	left: 33%;
+	top: 0;
+}
+.gridline.two{
+	height: 100%;
+	width: 0px;
+	left: 66%;
+	top: 0;
+}
+.gridline.three{
+	height: 0px;
+	width: 100%;
+	top: 33%;
+}
+.gridline.four{
+	height: 0px;
+	width: 100%;
+	top: 66%;
+}
+/*crop icon which is toggle*/
+#crop-icon{
+	background-image: url("../image/cropped-state.png");
+	height: 50px;
+	width: 50px;
+	background-size: cover;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+/*active crop icon*/
+#crop-icon.active{
+	background-image: url("../image/cropped-state.png");
+}
+#crop-icon.not-active{
+	background-image: url("../image/not-crop.png");
+}
+
+.mid{
+	background-image: url("../image/line.png");
+}
+.mid-top{
+	left: 50%;
+	left: 50%;
+    top: -12px;
+    cursor: n-resize;
+}
+.mid-right{
+	top: 50%;
+	right: -12px;
+	transform: rotate(90deg);
+    cursor: e-resize;
+}
+.mid-bottom{
+	bottom: -12px;
+	left: 50%;
+    cursor: n-resize;
+}
+.mid-left{
+	top: 50%;
+	left: -12px;
+	transform: rotate(90deg);
+    cursor: e-resize;
+}

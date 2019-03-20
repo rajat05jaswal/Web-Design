@@ -1,0 +1,9 @@
+//Imported all other scss files in a single main.scss so that main.css is complied
+@import "variables";
+@import "mixins";
+@import "loops";
+@import "inheritence";
+@import "helper";
+@import "nav";
+@import "mainSection";
+@import "footer";

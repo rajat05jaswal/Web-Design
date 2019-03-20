@@ -1,0 +1,861 @@
+body{
+	font-family: Arial;
+	font-size: 16px;
+	background-color: #DCFFFB;
+	margin-top: 0px;
+}
+input[type="checkbox"]{
+	height: 18px;
+	width: 18px;
+	vertical-align: -2px;
+}
+
+/*Header CSS Starts*/
+.header-container{
+	border-bottom: 3px solid black;
+	overflow: auto;
+    /*background-color: #DCFFFB;*/
+}
+.header-container > div{
+	float: left;
+	padding-bottom: 2px;
+}
+.header-container > div:first-child{
+	padding-right: 5px;
+	background-color: #fff; 
+	margin-top:0px;
+	padding-top: 20px;
+}
+.form-incline{
+	display: inline-block;
+	transform: rotate(-90deg);
+	vertical-align: 10px;
+}
+.form-incline +span{
+	font-weight: bold;
+	font-size: 3em;
+    margin-left: -12px;
+}
+.header-container > div:nth-child(2){
+	padding-right: 20px;
+	border-right: 1px solid black;
+	margin-top:20px;
+}
+.header-container > div:nth-child(2) p{
+	font-weight: bold;
+	font-size: 0.8em;
+	margin-bottom: 0;
+}
+.header-container > div:nth-child(2) p span:last-child{
+	display: inline-block;
+	float: right;
+}
+.header-container > div:nth-child(2) h2{
+	font-weight: bold;
+	margin: 0;
+}
+.header-container > div:nth-child(3){
+	padding: 1px 5px;
+	border-right: 1px solid black;
+	margin-top:20px;
+}
+.header-container > div:nth-child(3) span{
+	font-size: 3em;
+	font-weight: bold;
+}
+.header-container > div:nth-child(3) span:first-child{
+	color: #fff;
+	-webkit-text-stroke:1px black;
+}
+.header-container > div:nth-child(4) p{
+	padding-top: 37px;
+	margin: 0;
+}
+.header-container > div:nth-child(4){
+	padding: 1px 10px;
+	border-right: 1px solid black;
+	margin-top:20px;
+}
+.header-container > div:nth-child(5){
+	padding: 1px 20px;
+	margin-top:20px;
+}
+.header-container > div:nth-child(5) span{
+    margin-top: 35px;
+    display: inline-block;
+}
+/*Header CSS Ends*/
+.form-page-1 .filling-status{
+	border-bottom: 1px solid black;
+}
+.form-page-1 .filling-status label, .form-page-1 .filling-status >span{
+	margin-right: 20px;
+}
+.form-page-1 .user-info{
+	overflow: auto;
+	border: 1px solid black;
+	border-left: 0;
+	border-right: 0;
+}
+.form-page-1 .user-info >div{
+	width: 40%;
+	float: left;
+	border-right: 1px solid black;
+}
+.form-page-1 .user-info >div:last-child{
+	width: 19.58%;
+	border-right: none;
+}
+.form-page-1 .user-info >div:last-child p{
+	font-weight: bold;
+}
+.form-page-1 .user-info p{
+    padding: 5px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+.form-page-1 .user-info input[type="text"], .form-page-1 .user-info input[type="number"]{
+	width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #F1F4FF; 
+}
+
+.form-page-1 .standard-deduction label, .form-page-1 .standard-deduction >span{
+	margin-right: 20px;
+}
+.form-page-1 .standard-deduction{
+	border-bottom: 1px solid black;
+}
+
+.form-page-1 .spouse-deduction-wrapper{
+	overflow: auto;
+	border-bottom: 1px solid black;
+}
+.form-page-1 .spouse-deduction-wrapper > div{
+	float: left;
+	width: 80%;
+	border-right: 1px solid black;
+	padding-right: 1px;
+}
+.form-page-1 .spouse-deduction-wrapper > div label{
+	margin-right: 20px;
+}
+.form-page-1 .spouse-deduction-wrapper > div:last-child{
+	width: 19.58%;
+	border-right: none;
+}
+.form-page-1 .spouse-deduction-wrapper > div:last-child label{
+	margin: 0;
+}
+
+.form-page-1 .home-address >div:first-child{
+	width: 70%;
+}
+.form-page-1 .home-address >div:nth-child(2){
+	width: 10%;
+}
+.form-page-1 .home-address >div:last-child p{
+	background-color: #DCFFFB;
+	display: inline;
+}
+.form-page-1 .city-address >div:first-child{
+	width: 80%;
+}
+.form-page-1 .city-address >div:last-child p{
+	background-color: #DCFFFB;
+	display: inline;
+	font-weight: normal;
+}
+
+/*Table starts*/
+/*Only used for dependents*/
+.dependents-table{
+	width: 100%;
+    border-spacing: unset;
+}
+.dependents-table input[type="text"], .dependents-table input[type="number"]{
+	width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #F1F4FF;
+}
+table p{
+	margin: 0;
+}
+table tr th{
+	padding: 2px 5px;
+	font-weight: normal;
+	vertical-align: top;
+}
+table tr td, table tr th{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+table tr td:last-child, table tr th:last-child{
+	border-right: none;
+}
+table tr th:first-child{
+	text-align: left;
+	width: 40%;
+}
+table tr th:first-child p:last-child, table tr th:last-child p:last-child{
+	margin-top: 10px;
+}
+table tr th:first-child span:last-child{
+	float: right;
+}
+table tr td div{
+	text-align: center;
+}
+
+/*//Signature*/
+.signature-wrapper{
+	overflow: auto;
+	border-bottom: 2px solid black;
+}
+.first{
+	width: 10%;
+	float: left;
+}
+.first h2{
+	width: 70%;
+	font-size: 1.5em;
+	margin: 5px 0;
+}
+.second{
+	width: 90%;
+	float: left;
+}
+.second > div:first-child p{
+	font-size: 0.9em;	
+}
+.second > div:last-child{
+	overflow: auto;
+}
+.arrow-right{
+	width: 0px;
+    height: 0px;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 30px solid black;
+    float: left;
+    margin-top: 40px;
+}
+.your-signature{
+    width: 95%;
+	float: left;
+	background-color: #fff;
+}
+.your-signature > div{
+	overflow: auto;
+}
+.your-signature > div >div{
+	float: left;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.your-signature input, .your-signature span{
+	display: block;
+}
+.your-signature span{
+	padding: 8px;
+}
+.your-signature > div >div:first-child{
+	width: 35%;
+}
+.your-signature > div >div:nth-child(2){
+	width: 14%;
+}
+.your-signature > div >div:nth-child(3){
+	width: 28%;
+}
+.your-signature > div >div:nth-child(4){
+	width: 22%;
+	border-right: none;
+	padding-left: 5px;
+}
+.your-signature > div >div:nth-child(2) input{
+	width: 99%;
+	padding-top: 2px;
+	background-color: #fff;
+}
+.your-signature > div >div:nth-child(1) input{
+	background-color: #fff;
+}
+.your-signature input{
+	width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #F1F4FF; 
+}
+.your-signature > div >div:nth-child(4) input{
+	width: 200px;
+	height: 31px;
+	display: inline;
+	border: 1px solid black;
+}
+.your-signature > div >div:nth-child(4) span{
+	width: 30px;
+	display: inline;
+}
+.your-signature .second-row > div{
+	border-bottom: none;
+}
+
+/*Preparer*/
+.preparer{
+	overflow: auto;
+	border-bottom: 2px solid black;
+}
+.preparer h2{
+	width: 100%;
+}
+.preparer .first{
+	width: 12.2%;
+}
+.preparer .second{
+	overflow: auto;
+    width: 87.5%;
+}
+.second-second,.second-first{
+	float: left;
+}
+.second-first{
+	width: 80%;
+	background-color: #fff;
+	border-right: 1px solid black;
+}
+.second-second{
+	width: 18%;
+	background-color: #fff;
+	padding: 10px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid black;
+}
+.second-second p{
+	margin: 0;
+}
+.second-first > div{
+	overflow: auto;
+	border-bottom: 1px solid black;
+}
+.second-first > div:nth-child(2) span{
+	padding-left: 15px;
+}
+.second-first > div > div{
+	float: left;
+	border-right: 1px solid black;
+}
+.second-first > div > div:first-child{
+	width: 25%;
+}
+.second-first > div > div:nth-child(2){
+	width: 45%;
+}
+.second-first > div > div:nth-child(3){
+	width: 15%;
+}
+.second-first > div > div:nth-child(4){
+	width: 14.6%;
+	border-right: none;
+}
+.second-first > div > div:first-child input {
+	background-color: #fff;
+}
+.second-first > div > div:first-child input[name="prep-name"]{
+	background-color: #F1F4FF; 
+}
+.second-first > div > div:nth-child(2) input{
+	background-color: #fff;
+}
+.second-first > div > div input{
+	width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #F1F4FF; 
+}
+.second-first > div > div span{
+	display: block;
+	padding: 8px;
+}
+
+.second-first > div:nth-child(2) input[name="firm-name"]{
+	height: 25px;
+    width: 529px;
+    border: none;
+    border-right: 1px solid black;
+}
+.second-first > div:nth-child(2) input{
+	background-color: #F1F4FF;
+}
+.second-first > div:nth-child(2) input[name="firm-phone"]{
+	height: 25px;
+	border: none;
+}
+.preparer .second > div:last-child{
+	clear: both;
+    background-color: #fff;
+}
+.preparer .second > div:last-child span{
+    padding-left: 15px;
+}
+.preparer .second > div:last-child input[name="firm-address"]{
+    height: 25px;
+    width: 1024px;
+    border: none;
+    background-color: #F1F4FF;
+}
+
+.form-page-1 .user-info input[type="text"]:focus{
+	background-color: #fff;
+}
+
+/*Footer Css starts*/
+footer{
+	padding-top: 10px;
+}
+footer span:nth-child(2){
+	margin-left: 200px;
+}
+footer span:last-child{
+	float: right;
+}
+footer span:last-child strong{
+	font-size: 1.2em;
+}
+
+
+/*Page 2 Css starts*/
+/*header CSS starts*/
+.page2 header div{
+	overflow: auto;
+}
+.page2 input{
+	background-color: #F1F4FF;
+}
+.page2 input:focus{
+	background-color: #fff;
+}
+.page2 header p{
+	margin: 0;
+}
+.page2 header div p:first-child{
+	float: left;
+}
+.page2 header div p:last-child{
+	float: right;
+}
+
+.page2{
+	font-size: 14px;
+}
+.page2 p{
+	margin: 0;
+}
+.page2 form > div{
+	overflow: auto;
+	border-bottom: 1px solid black;
+}
+.page2 form > div:first-child .overflow:last-child{
+	padding-bottom: 6px;
+}
+.page2 form > div:nth-child(2) .overflow.twentyone{
+	padding-bottom: 5px;
+}
+/*Divided Page 2 main section into 3 different parts with each section a different width*/
+.first-wrapper{
+	width: 10%;
+	float: left;
+	background-color: #fff;
+}
+.second-wrapper{
+	width: 65%;
+	float: left;
+	padding-left: 5px;
+	background-color: #DCFFFB;
+}
+.third-wrapper{
+	width: 24%;
+	float: left;
+}
+.first-wrapper p{
+	padding: 40px 10px 40px 0;
+}
+.second-wrapper .overflow {
+	overflow: hidden; 
+	/*padding: 3px 0;*/
+}
+.overflow p{
+	float: left;
+	margin-top: 8px;
+}
+.overflow > p:first-child{
+	width: 30px;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow > p:last-child:after{
+    width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . ";
+}
+.page2 form > div:last-child{
+	border-right: none;
+}
+
+/*Boxwrap is for the right most section with 2 input fields and a number*/
+.box-wrap{
+	overflow: hidden;
+	border: 1px solid black;
+	border-top: none;
+	border-right: none;
+}
+.box-wrap > div{
+	float: left;
+	width: 12%;
+	border-right: 1px solid black;
+}
+.box-wrap input{
+	width: 100%;
+    height: 21px;
+    border: none;
+}
+.box-wrap input:focus{
+	background-color: #fff;
+}
+.box-wrap > div:nth-child(1){
+	padding: 3px 0px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #DCFFFB;
+}
+.box-wrap > div:nth-child(1) p{
+    margin-top: 2px;
+}
+.box-wrap > div:nth-child(2){
+	width: 64%
+}
+.box-wrap > div:nth-child(3){
+	width: 23%;
+	border-right: none;
+}
+
+.second-wrapper .box-wrap{
+	width: 324px;
+	float: left;
+}
+.overflow.a .box-wrap{
+	margin-right: 50px;
+}
+.overflow.a .box-wrap > div:first-child > p{
+	float: none;
+}
+.overflow.a p:nth-child(2){
+	width: 220px;
+}
+.overflow.a .box-wrap{
+	border-right: 1px solid black;
+}
+.overflow.sixth input{
+    height: 21px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 15px;
+    display: block;
+    float: left;
+}
+.overflow.next-line .next{
+	float: none;
+}
+.overflow.next-line > p:first-child{
+	height: 30px;
+}
+.box-wrap.next-line input{
+	height: 29px;
+}
+.box-wrap.next-line div:first-child{
+	padding: 7px 0px;
+}
+.overflow.eleventh strong{
+	margin-right: 5px;
+}
+.overflow.eleventh > p:nth-child(2) strong{
+	margin-right: 5px;
+	margin-left: 15px;
+}
+.overflow.eleventh > p:nth-child(2) strong:first-child{
+	margin-left: 0;
+}
+.overflow.eleventh input[type="text"]{
+	margin-left: 10px;
+	width: 100px;
+	border: none;
+	border-bottom: 1px solid black;
+    height: 21px;
+}
+.overflow.eleventh > p:first-child{
+	margin-top: 14px;
+}
+.overflow.eleventh-b div{
+	float: right;
+	margin-top: 5px;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow.eleventh-b > p:nth-child(2):after{
+    width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . . . .";
+}
+.box-wrap.eleventh{
+	height: 24px;
+	border-bottom: none;
+}
+.box-wrap.eleventh-b input{
+	height: 35px;
+}
+.box-wrap.eleventh-b > div:first-child{
+    padding: 9px 0px;
+}
+.overflow.twelve input[type="text"]{
+	height: 21px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+.overflow.twelve > p:nth-child(3){
+	margin: 0 10px;
+}
+.overflow.twelve > p:nth-child(5){
+	float: right;
+	margin-top: 5px;
+}
+.overflow.twelve > p:nth-child(5) span{
+	vertical-align: 3px;
+}
+.overflow.seventeeth input[type="text"]{
+	height: 21px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+.overflow.seventeeth p:nth-child(3){
+	margin: 0 10px;
+}
+.box-wrap.seventeeth input{
+	height: 30px;
+}
+.box-wrap.seventeeth div:first-child{
+	padding: 7px 0;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow.twenty > p:nth-child(2):after{
+    width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . . . .";
+}
+.overflow.twenty > p:last-child{
+	float: right;
+	margin: 0;
+	margin-top: 5px;
+}
+.overflow.twentyb input[type="text"]:first-child{
+	margin-left: 10px;
+	border-left: 1px solid black;
+}
+.overflow.twentyb input[type="text"]:nth-child(9){
+	margin-right: 20px;
+}
+.overflow.twentyb input[type="text"]{
+	height: 21px;
+	width: 30px;
+	border: none;
+	border: 1px solid black;
+	border-left: none;
+	float: left;
+}
+.overflow.twentyb p:nth-child(3){
+	margin-top: 2px;
+}
+.overflow.twentyb p:nth-child(2) strong{
+	margin-right: 10px;
+}
+.overflow.twentyb label[for="checking"]{
+	margin-right: 30px;
+}
+.overflow.twentyb.twentyd input[type="text"]:nth-child(9){
+	margin: 0;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow.twentyd > p:last-child:after{
+	content:"";
+}
+.overflow.twentyb.twentyd p:nth-child(3){
+	margin: 0;
+}
+.overflow.twentyb.twentyd input[type="text"]:first-child{
+	margin-left: 8px;
+}
+.overflow.twentyone > p:nth-child(3){
+    margin-left: 25px;
+}
+.overflow.twentyone > p:nth-child(4){
+    padding: 3px 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: 4px;
+}
+.overflow.twentyone > p:nth-child(5){
+	margin-top: 2px;
+}
+.overflow.twentyone > p:nth-child(5) input{
+    height: 21px;
+	width: 141px;
+	border: none;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+.box-wrap.twentyone > div{
+	height: 85px;
+}
+.box-wrap.twentyone > div:nth-child(1){
+	padding: 0;
+	background-color: #87838370;
+}
+.box-wrap.twentyone > div:nth-child(2),  .box-wrap.twentyone > div:nth-child(3){
+	background-color: #fff;
+}
+
+.page2 form > div:nth-child(2) .first-wrapper > p{
+	padding: 0;
+    padding-bottom: 45px;
+}
+.page2 form > div:nth-child(3) .overflow:first-child > p:last-child{
+	float: right;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.page2 form > div:nth-child(3) .overflow:first-child > p:nth-child(2):after{
+    width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . . . .";
+}
+.overflow.twentyfour > p:nth-child(2){
+	width: 618px;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow.twentyfour > p:nth-child(2):after{
+	width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . .";
+}  
+.box-wrap.twentyfive{
+	height: 25px;
+	background-color: #87838370;
+}
+.page2 form > div:nth-child(3) h4{
+	margin-bottom: 16px;
+}
+.page2{
+	background-color: #fff;
+}
+.page2 header >div{
+	border-bottom: 1px solid black;
+}
+.page2 header >div strong{
+	font-size: 1.5em;
+}
+.page2 header{
+	background-color: #DCFFFB;
+}
+
+/*Page 2 footer CSS starts*/
+.page2 footer{
+	background-color: #DCFFFB;
+	overflow: auto;
+}
+.page2 footer p{
+	float: left;
+}
+.page2 footer p:last-child{
+	float: right;
+}
+.page2 footer a{
+	text-decoration: none;
+    color: black;
+}
+.page2 footer strong{
+	font-size: 1.5em;
+}
+
+
+/*The overlay with number 8 on page 2 starts here*/
+.left-overlay{
+	border-radius: 20px;
+}
+.left-overlay{
+	border: 1px solid black;
+	padding: 5px;
+}
+.left-overlay > p{
+	padding: 0;
+	margin-top: 5px;
+}
+.left-overlay ul{
+	padding-left: 13px;
+	margin: 0;	
+	margin-top: 5px;
+}
+.left-overlay li{
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    line-height: 16px;
+}
+.page2 form > div:nth-child(1) .second-wrapper{
+	position: relative;
+}
+/*Used postion because to connect the overaly and 8 number*/
+.eight-left{
+    position: absolute;
+    left: -1px;
+    border: 1px solid;
+    padding: 2px 6px;
+    background-color: #fff;
+    border-right: none;
+    border-left: none;
+}
+/*Used the after pseduo class to display multiple dots after the P tag to replicate form*/
+.overflow.a > p:nth-child(2):after{
+	width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . . . .";
+}
+.overflow.a > .box-wrap + p> strong{
+	padding-right: 5px;
+}
+
+.page2 form > div:nth-child(2) .overflow.twentyb p:nth-child(3) strong{
+	padding-right: 5px;
+}

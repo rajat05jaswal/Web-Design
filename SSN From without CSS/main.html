@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Us Individual Income Tax Return - Form 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- Using bgcolor attribute for background color -->
+<body bgcolor="#DCFFFB">
+    <main>
+        <header>
+            <!-- Includes header that is logo and name of the form -->
+            <div>
+                <span>
+                    <span>Form</span>
+                    <!-- Used font tag to make the text look bigger since CSS was not allowed -->
+                    <strong><font size="5">1040</font></strong>
+                </span>
+                <span>
+                    <span>Department of the Treasury — Internal Revenue Service (99)</span>
+                    <span><strong>U.S. Individual Income Tax Return &nbsp;&#124;</strong></span>
+                </span>
+                <span>
+                    <span>
+                        <font size="5">
+                            <span>&nbsp;20</span>
+                            <span><strong>18&nbsp;</strong></span>
+                        </font>
+                        &#124;
+                    </span>
+                </span>
+                <span>OMB No. 1545-0074 &nbsp;&#124;</span>
+                <span>IRS Use Only—Do not write or staple in this space</span>
+                <hr>
+            </div>
+        </header>
+        <main>
+            <!-- Inlcudes the main content of the web page -->
+            <form action="">
+                <!-- Added form -->
+                <div class="filling-status">
+                    <!-- Used for-id association for better presentation and User interaction -->
+                    <span>Filling status: </span>
+                    <input id="single" name="married-status" type="checkbox" value="Single" />
+                    <label for="single">Single</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="married-jointly" name="married-status" type="checkbox" value="Married filing jointly" />
+                    <label for="married-jointly">Married filing jointly</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="married-separately" name="married-status" type="checkbox" value="Married filing separately" />
+                    <label for="married-separately">Married filing separately</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="head-household" name="married-status" type="checkbox" value="Head of household" />
+                    <label for="head-household">Head of household</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="widower" name="married-status" type="checkbox" value="Qualifying widow(er)" />
+                    <label for="widower">Qualifying widow(er)</label>
+                </div>
+                <hr>
+                <div class="user-info">
+                    <div>
+                        <span>Your first name and initial &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        </span>
+                        <span>Last name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                        <span><strong>Your social security number &emsp;&emsp;</strong></span>
+                    </div>
+                    <div>
+                        <input type="text" name="fname" size="75" required pattern="[A-Za-z]+" title="Only characters allowed">
+                
+                        <input type="text" name="lname" size="45" required pattern="[A-Za-z]+" title="Only characters allowed">
+                        <!-- Used min max for the range since phone number cannot be more than less than or more than 10 digits -->
+                        <input type="number" min="100000000" max="999999999" name="quantity" size="30" required> 
+                    </div>
+                    
+                </div>
+                <hr>
+                <div class="standard-deduction">
+                    <span>Your standard deduction: </span>
+                    <!-- Used for-id association for better presentation and User interaction -->
+                    <!-- Using common name for a group of checkbox -->
+                    <input id="claim-dependent" name="dependent-status" type="checkbox" value="Someone can claim you as a dependent" />
+                    <label for="claim-dependent">Someone can claim you as a dependent</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="born-before" name="dependent-status" type="checkbox" value="You were born before January 2, 1954" />
+                    <label for="born-before">You were born before January 2, 1954</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="blind" name="dependent-status" type="checkbox" value="You are blind" />
+                    <label for="blind">You are blind</label>
+                </div>
+                <hr>
+                <div class="spouse-info">
+                    <div>
+                        <span>If joint return, spouse's first name and initial</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <span>Last name </span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <span><strong>Spouse’s social security number</strong></span>
+                    </div>
+                    <div>
+                        <input type="text" name="spousefname" size="75" required pattern="[A-Za-z]+" title="Only characters allowed">
+                
+                        <input type="text" name="spuselname" size="45" required pattern="[A-Za-z]+" title="Only characters allowed">
+                        
+                        <input type="number" name="quantity" size="30">
+                    </div>
+                    
+                </div>
+                <hr>
+                <div>
+                    <div class="spouse-deduction-wrapper">
+                        <!-- Used for-id association for better presentation and User interaction -->
+                        <!-- Using common name for a group of checkbox -->
+                        <span>Spouse standard deduction: </span>
+                        <input id="spouse-claim-dependent" name="spouse-status" type="checkbox" value="Someone can claim your spouse as a dependent" />
+                        <label for="spouse-claim-dependent">Someone can claim your spouse as a dependent</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="spouse-born-before" name="spouse-status" type="checkbox" value="Spouse was born before January 2, 1954" />
+                        <label for="spouse-born-before">Spouse was born before January 2, 1954</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="spouse-blind" name="spouse-status" type="checkbox" value="Spouse is blind" />
+                        <label for="spouse-blind">Spouse is blind</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="spouse-itemizes" name="spouse-status" type="checkbox" value="Spouse itemizes on a separate return or you were dual-status alien" />
+                        <label for="spouse-itemizes">Spouse itemizes on a separate return or you were dual-status alien</label>
+                    </div>
+                    <div>
+                        <input id="full-health" name="full-health" type="checkbox" value="Full-year health care coverage or exempt (see inst.)" />
+                        <label for="full-health">Full-year health care coverage or exempt (see inst.)</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="home-address-wrapper">
+                    <div>
+                        <div>
+                            <span>Home address (number and street). If you have a P.O. box, see instructions. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                            <span>Apt no &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                            <span><strong>Presidential Election Campaign</strong> (see inst.)</span>
+                        </div>
+                        <div>
+                            <input type="text" name="homeaddress" size="90" required>
+                    
+                            <input type="number" name="apt-no" required>
+                            
+                            &emsp;&emsp;&emsp;&emsp;&emsp;
+                            <input id="you-election" name="election" type="checkbox" value="You" />
+                            <label for="you-election"><strong>You</strong></label>
+        
+                            <input id="spouse-election" name="election" type="checkbox" value="Spouse" />
+                            <label for="spouse-election"><strong>Spouse</strong></label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="city-address-dependents-wrapper">
+                    <div>
+                        <span>City, town or post office, state, and ZIP code. If you have a foreign address, attach Schedule 6. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                        <span>If more than four dependents, see inst. and ✓ here ▶</span>
+                        
+                    </div>
+                    <div>
+                        <input type="text" name="cityaddress" size="115" required>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <input id="four-dependents" name="four-dependents" type="checkbox" value="More than 4 dependents" />
+                    </div>
+                </div>
+                <hr>
+
+                <div class="dependents-wrapper">
+                    <div class="dependents-name">
+                        <span><strong>Dependents</strong> (see instructions):</span><br>
+                        <strong>(1) </strong><span>First name</span>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <span>Last name</span>
+                        &emsp;&emsp;
+                        <span><strong>(2)</strong> Social security number </span>
+                        &emsp;&emsp;&emsp;
+                        <span><strong>(3)</strong> Relationship to you</span>
+                        &emsp;&emsp;&emsp;
+                        <span><strong>(4) ✓</strong> if qualifies for (see inst.):</span>
+                        <span>Child tax credit </span><span>Credit for other dependents</span>
+                        
+                        
+                        
+                    </div>
+                    <div>
+                        <input type="text" name="depname1" size="50" pattern="[A-Za-z]+" title="Only characters allowed">
+                        &emsp;&emsp;
+                        <input type="number" name="depssn1" min="100000000" max="999999999">
+                        &emsp;&emsp;
+                        <input type="text" name="deprel1" >
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <input id="child-tax-dep1" name="child-option-dep1" type="checkbox" value="Child Tax" />
+                        &emsp;&emsp;
+                        <input id="credit-other-dep1" name="child-option-dep1" type="checkbox" value="Credit Other departments" />
+                    </div>
+                    <div>
+                        <input type="text" name="depname2" size="50" pattern="[A-Za-z]+" title="Only characters allowed">
+                        &emsp;&emsp;
+                        <input type="number" name="depssn2" min="100000000" max="999999999">
+                        &emsp;&emsp;
+                        <input type="text" name="deprel3">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <input id="child-tax-dep2" name="child-option-dep2" type="checkbox" value="Child Tax" />
+                        &emsp;&emsp;
+                        <input id="credit-other-dep2" name="child-option-dep2" type="checkbox" value="Credit Other departments" />
+                    </div>
+                    <div>
+                        <input type="text" name="depname3" size="50" pattern="[A-Za-z]+" title="Only characters allowed">
+                        &emsp;&emsp;
+                        <input type="number" name="depssn3" min="100000000" max="999999999">
+                        &emsp;&emsp;
+                        <input type="text" name="deprel3">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <input id="child-tax-dep3" name="child-option-dep3" type="checkbox" value="Child Tax" />
+                        &emsp;&emsp;
+                        <input id="credit-other-dep3" name="child-option-dep3" type="checkbox" value="Credit Other departments" />
+                    </div>
+                    <div>
+                        <input type="text" name="depname4" size="50" pattern="[A-Za-z]+" title="Only characters allowed">
+                        &emsp;&emsp;
+                        <input type="number" name="depssn4" min="100000000" max="999999999">
+                        &emsp;&emsp;
+                        <input type="text" name="deprel4" pattern="[A-Za-z]+" title="Only characters allowed">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <input id="child-tax-dep4" name="child-option-dep4" type="checkbox" value="Child Tax" />
+                        &emsp;&emsp;
+                        <input id="credit-other-dep4" name="child-option-dep4" type="checkbox" value="Credit Other departments" />
+                    </div>
+                    <hr>
+                    <div class="signature">
+                        <span><strong><font size="5">Sign Here </font></strong>Joint return? See instructions. Keep a copy for your records.</span>
+                        <p>Under penalties of perjury, I declare that I have examined this return and accompanying schedules and statements, and to the best of my knowledge and belief, they are true, correct, and complete. Declaration of preparer (other than taxpayer) is based on all information of which preparer has any knowledge.</p>
+                        <div class="signature-wrapper">
+                            <div>
+                                <span>Your signature </span>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                <span>Date</span>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                <span>Occupation </span>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                <span>If the IRS sent you an Identity Protection PIN, enter it here (see inst.) </span>
+                            </div>
+                            <div>
+                                <input type="text" name="signature" size="50" required>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="date" name="date" required>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="text" name="occupation" required>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="number" maxlength="6" name="pin">
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <div class="signature-wrapper">
+                            <div>
+                                <span>Spouse’s signature. If a joint return, <strong>both</strong> must sign.</span>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;
+                                <span>Date</span>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                <span>Spouse's Occupation </span>
+                                &emsp;&emsp;&emsp;&nbsp;
+                                <span>If the IRS sent you an Identity Protection PIN, enter it here (see inst.) </span>
+                            </div>
+                            <div>
+                                <input type="text" name="spouse-signature" size="50">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="date" name="spouse-date">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="text" name="spouse-occupation">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <input type="number" maxlength="6" name="spouse-pin">
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="paid-preparer-use">
+                        <span><font size="5"><strong>Paid Preparer Use Only </strong></font><br><br>
+                        <div>
+                            <div class="preparer-wrapper">
+                                <div>
+                                    <span>Preparer’s name </span>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>Preparer’s signature </span>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>PTIN</span>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>Firm’s EIN</span>
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>Check if:</span>
+                                </div>
+                                <div>
+                                    <input type="text" name="prep-name">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <input type="text" name="prep-sign" size="50">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <input type="number" name="prep-ptin">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <input type="number" name="firm-ein">
+                                    &emsp;&emsp;
+                                    <input id="third-party" name="employment-status" type="checkbox" value="3rd Party Designee" />
+                                    <label for="third-party">3rd Party Designee</label>
+                                    <input id="self-employeed" name="employment-status" type="checkbox" value="Self-employed" />
+                                    <label for="self-employeed">Self-employed</label>
+                                </div>    
+                                    
+                                </div>
+                                <hr>
+                                <div>
+                                    <span>Firm’s name ▶&emsp;</span>
+                                    <input type="text" name="firm-name" size="100">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span>Phone no.</span>
+                                    <!-- Used pattern so that phone number does'nt exceed 10 digits and al are digits -->
+                                    <input type="text" name="firm-phone" pattern="[0-9]{10}" title="Kindly enter 10 digits">
+                                </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>Firm’s address ▶&emsp;</span>
+                            <input type="text" name="firm-address" size="150">
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <input type="submit" val="Submit">
+            </form>
+            
+        </main>
+        <footer>
+            <!-- Including footer so that all the discolosures and links to contact appear here -->
+            <span><strong>For Disclosure, Privacy Act, and Paperwork Reduction Act Notice, see separate instructions.</strong></span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span>Cat. No. 11320B</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span>Form <strong>1040</strong> (2018)</span>
+        </footer>
+    </main>
+</body>
+</html>

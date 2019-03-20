@@ -1,0 +1,10 @@
+@mixin image($imageName){
+	background-image: url("../images/"+$imageName+".jpg");
+	background-size: cover;
+}
+@mixin fontSize($font){
+	font-size: $font+em;
+}
+@mixin fontWeight($size){
+	font-weight: $size;
+}

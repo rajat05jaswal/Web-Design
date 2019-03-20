@@ -1,0 +1,29 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "npm install esdoc esdoc-standard-plugin",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint app",
+    "doc": "esdoc -c esdoc.json",
+    "postinstall": "npm run build && npm run doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2019/assignment-5-rajatjaswal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2019/assignment-5-rajatjaswal/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2019/assignment-5-rajatjaswal#readme",
+  "devDependencies": {
+    "esdoc-standard-plugin": "^1.0.0"
+  },
+  "dependencies": {
+    "esdoc": "^1.1.0"
+  }
+}

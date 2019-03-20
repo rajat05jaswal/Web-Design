@@ -1,0 +1,93 @@
+//Implemented nav section/Header section
+header{
+	border-bottom: $grey-border;
+	margin-bottom: 30px;
+	nav{
+		margin-left: 125px;
+		.logo{
+		    padding-right: 60px;
+		    border-right: $grey-border;
+			.date{
+				p{
+				    font-size: 0.8em;
+				    color: white;
+				    padding: 2px;
+				}
+				p:first-child{
+					background-color: black;
+				    padding-left: 12px;
+				    letter-spacing: 0.8em;
+				}
+				p:last-child{
+					background-color: #F52832;
+					padding-left: 50px;
+				}
+			}
+			.news-portal{
+				font-size: 3em;
+				overflow: hidden;
+				p{
+				    line-height: 45px;
+				}
+				p:last-child{
+					color: #E34149;
+				}
+			}
+		}
+
+		.links-wrap{
+			width: 76%;
+			.links{
+				margin-bottom: 5px;
+			    margin-right: 150px;
+				a{
+					font-weight: bold;
+					font-size: 0.7em;
+					padding: 0 10px;
+					border-right: 2px solid black;
+					&:first-child{
+						color: #5F6584;
+						padding-left: 0;
+					}
+					&:nth-child(2){
+						color: #A76064;
+					}
+					&:last-child{
+						color: #AC77AF;
+						border: none;
+						padding-right: 0;
+					}
+				}
+			}
+			.navlist{
+			    border: $grey-border;
+			    border-bottom: none;
+			    border-left: 0;
+				ul{
+					list-style-type: none;
+				    padding: 9px 0;
+				    display: inline-block;
+				    li{
+				    	padding-left: 32px;
+				    	&:last-child{
+				    		padding-right: 32px;
+				    	}
+				    }
+				}
+			}
+			.search{
+			    padding-left: 174px;
+			    padding-top: 6px;
+			    border-top: 1px solid #E3E3E3;
+			    width: 150px;
+				div{
+					height: 20px;
+					width: 20px;
+					background-image: url("../images/search.svg");
+				}
+			}
+		}
+	}
+}
+
+

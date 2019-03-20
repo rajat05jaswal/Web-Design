@@ -1,0 +1,27 @@
+//Initialised some helper classes
+.fleft{
+	float: $float-left;
+}
+.fright{
+	float: $float-right;
+}
+.overflow{
+	overflow: auto;
+}
+.clear{
+	clear: both;
+}
+p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+    padding-left: 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h3{
+	margin: 0;
+}
